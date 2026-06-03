@@ -102,19 +102,20 @@ nav a:hover { opacity: 0.75; }
     overflow-wrap: break-word;
     word-break: break-word;
 }
+
 .hero-content p {
-    font-size: clamp(0.95rem, 2vw, 1.5rem);
-    font-weight: bold;
+    font-size: clamp(0.95rem, 2vw, 3rem);
     letter-spacing: 0.03em;
     line-height: 1.5;
     margin-top: 1rem;
 }
 
-.hero-tagline {
-  display: block;
-  margin-top: 1rem;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  color: #fff;
+.hero-name {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.95;
+    margin-bottom: 0.75rem;
 }
 
 .hero-cta {
