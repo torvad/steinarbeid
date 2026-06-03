@@ -78,6 +78,16 @@ nav a:hover { opacity: 0.75; }
   max-width: 700px;
 }
 
+.hero-name {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.75rem;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
 .hero-content h1 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: bold;
