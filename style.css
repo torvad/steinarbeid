@@ -103,17 +103,22 @@ nav a:hover { opacity: 0.75; }
 }
 
 .hero-content p {
+  font-size: clamp(1.95rem, 2vw, 1.5rem);
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 3px;
+  color: #333;
   margin-top: 1rem;
-  font-size: clamp(2.05rem, 2.5vw, 1.35rem);
-  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
-  opacity: 0.92;
 }
 
 .hero-cta {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.85rem 2.2rem;
-  background: #b5651d;
+  background: #333333;
   color: #fff;
   text-decoration: none;
   font-size: 1.05rem;
@@ -121,7 +126,7 @@ nav a:hover { opacity: 0.75; }
   transition: background 0.2s;
   font-family: Arial, sans-serif;
 }
-.hero-cta:hover { background: #8b4a14; }
+.hero-cta:hover { background: #1a1a1a; }
 
 /* ── Sections ── */
 section {
