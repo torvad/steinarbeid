@@ -14,7 +14,7 @@
   <meta property="og:url" content="https://steinarbeid.com">
   <meta property="og:title" content="Steinarbeid Bergen – Naturstein, muring og uteområder">
   <meta property="og:description" content="Solid håndverk i stein. Natursteinsarbeid, muring, trapper og uteområder i Bergen og omegn.">
-  <meta property="og:image" content="https://picsum.photos/seed/steinarbeid-hero/1200/630">
+  <meta property="og:image" content="https://images.pexels.com/photos/31137184/pexels-photo-31137184/free-photo-of-rustic-old-hammer-on-weathered-rocks.jpeg?auto=compress&cs=tinysrgb&w=1200">
   <meta property="og:locale" content="nb_NO">
 
   <!-- Schema.org structured data -->
@@ -53,278 +53,7 @@
   }
   </script>
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --stone: #5a4a3a;
-      --stone-light: #8a7a6a;
-      --cream: #f5f0eb;
-      --text: #2c2416;
-      --accent: #3d6b4f;
-    }
-
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      color: var(--text);
-      background: #fff;
-      line-height: 1.7;
-    }
-
-    /* ── Header / Nav ── */
-    header {
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      z-index: 10;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 2rem;
-    }
-
-    .logo {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #fff;
-      letter-spacing: 0.05em;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-size: 0.95rem;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
-      transition: opacity 0.2s;
-    }
-    nav a:hover { opacity: 0.75; }
-
-    /* ── Hero ── */
-    .hero {
-      position: relative;
-      height: 100vh;
-      min-height: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .hero img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%);
-    }
-
-    .hero-content {
-      position: relative;
-      color: #fff;
-      padding: 2rem;
-      max-width: 700px;
-    }
-
-    .hero-content h1 {
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      font-weight: bold;
-      letter-spacing: 0.03em;
-      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
-      line-height: 1.1;
-    }
-
-    .hero-content p {
-      margin-top: 1rem;
-      font-size: clamp(1.05rem, 2.5vw, 1.35rem);
-      text-shadow: 0 1px 6px rgba(0,0,0,0.4);
-      opacity: 0.92;
-    }
-
-    .hero-cta {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.85rem 2.2rem;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.05rem;
-      border-radius: 3px;
-      transition: background 0.2s;
-      font-family: Arial, sans-serif;
-    }
-    .hero-cta:hover { background: #2d5240; }
-
-    /* ── Sections ── */
-    section {
-      padding: 5rem 2rem;
-    }
-
-    .section-inner {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-      color: var(--stone);
-    }
-
-    .section-line {
-      width: 50px;
-      height: 3px;
-      background: var(--accent);
-      margin-bottom: 2.5rem;
-    }
-
-    /* ── Services ── */
-    .services-bg { background: var(--cream); }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .service-card {
-      background: #fff;
-      border-radius: 4px;
-      padding: 2rem 1.5rem;
-      border-top: 3px solid var(--accent);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
-
-    .service-card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      color: var(--stone);
-    }
-
-    .service-card p {
-      font-size: 0.92rem;
-      color: #555;
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-
-    /* ── Gallery ── */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto auto;
-      gap: 0.75rem;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 3px;
-      display: block;
-      transition: opacity 0.2s;
-    }
-
-    .gallery-grid img:hover { opacity: 0.88; }
-
-    .gallery-grid .gallery-wide {
-      grid-column: span 2;
-    }
-
-    .gallery-grid .gallery-wide img {
-      height: 220px;
-    }
-
-    /* ── About strip ── */
-    .about-strip {
-      background: var(--stone);
-      color: #fff;
-      text-align: center;
-    }
-
-    .about-strip p {
-      font-size: 1.25rem;
-      max-width: 620px;
-      margin: 0 auto;
-      font-style: italic;
-      opacity: 0.95;
-    }
-
-    /* ── Contact ── */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .contact-info h3 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      color: var(--stone);
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-      font-family: Arial, sans-serif;
-    }
-
-    .contact-icon {
-      font-size: 1.4rem;
-      width: 2rem;
-      text-align: center;
-    }
-
-    .contact-item a {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
-
-    .contact-map img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 4px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-    }
-
-    /* ── Footer ── */
-    footer {
-      background: var(--text);
-      color: rgba(255,255,255,0.65);
-      text-align: center;
-      padding: 2rem;
-      font-family: Arial, sans-serif;
-      font-size: 0.85rem;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 700px) {
-      .gallery-grid { grid-template-columns: 1fr 1fr; }
-      .gallery-grid .gallery-wide { grid-column: span 2; }
-      .contact-grid { grid-template-columns: 1fr; }
-      .contact-map { display: none; }
-      nav { display: none; }
-    }
-
-    @media (max-width: 480px) {
-      .gallery-grid { grid-template-columns: 1fr; }
-      .gallery-grid .gallery-wide { grid-column: span 1; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -332,8 +61,6 @@
   <header>
     <div class="logo">T. Vadla Steinarbeid</div>
     <nav>
-      <a href="#tjenester">Tjenester</a>
-      <a href="#galleri">Galleri</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
@@ -341,8 +68,8 @@
   <!-- ── Hero ── -->
   <div class="hero">
     <img
-      src="https://picsum.photos/seed/steinarbeid-hero/1600/900"
-      alt="Natursteinsmur i Bergen"
+      src="https://images.pexels.com/photos/31137184/pexels-photo-31137184/free-photo-of-rustic-old-hammer-on-weathered-rocks.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      alt="Hammer og stein – steinarbeid i Bergen"
       loading="eager"
       fetchpriority="high"
     >
@@ -354,61 +81,10 @@
     </div>
   </div>
 
-  <!-- ── Services ── -->
-  <section class="services-bg" id="tjenester">
-    <div class="section-inner">
-      <h2 class="section-title">Tjenester</h2>
-      <div class="section-line"></div>
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Natursteinsarbeid</h3>
-          <p>Profesjonell legging og montering av naturstein til alle formål.</p>
-        </div>
-        <div class="service-card">
-          <h3>Murer og forblending</h3>
-          <p>Støttemurer, pyntemurer og forblending i høy kvalitet.</p>
-        </div>
-        <div class="service-card">
-          <h3>Trapper og uteområder</h3>
-          <p>Solide trapper, terrasser og stigninger som varer i generasjoner.</p>
-        </div>
-        <div class="service-card">
-          <h3>Reparasjon og vedlikehold</h3>
-          <p>Vi utbedrer eksisterende steinarbeid og gir det nytt liv.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ── About strip ── -->
   <section class="about-strip">
     <div class="section-inner">
       <p>"Vi bruker tradisjonelle teknikker og lokale materialer for å skape steinarbeid som er like vakkert som det er holdbart."</p>
-    </div>
-  </section>
-
-  <!-- ── Gallery ── -->
-  <section id="galleri">
-    <div class="section-inner">
-      <h2 class="section-title">Galleri</h2>
-      <div class="section-line"></div>
-      <div class="gallery-grid">
-        <div class="gallery-wide">
-          <img src="https://picsum.photos/seed/stein1/800/440" alt="Natursteinsmur" loading="lazy">
-        </div>
-        <div>
-          <img src="https://picsum.photos/seed/stein2/400/440" alt="Steintrapp" loading="lazy">
-        </div>
-        <div>
-          <img src="https://picsum.photos/seed/stein3/400/220" alt="Terrassestein" loading="lazy">
-        </div>
-        <div>
-          <img src="https://picsum.photos/seed/stein4/400/220" alt="Forblending" loading="lazy">
-        </div>
-        <div class="gallery-wide">
-          <img src="https://picsum.photos/seed/stein5/800/220" alt="Uteområde med naturstein" loading="lazy">
-        </div>
-      </div>
     </div>
   </section>
 
