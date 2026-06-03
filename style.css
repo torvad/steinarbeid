@@ -79,7 +79,7 @@ nav a:hover { opacity: 0.75; }
 }
 
 .hero-name {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   letter-spacing: 0.25em;
   text-transform: uppercase;
   opacity: 0.85;
