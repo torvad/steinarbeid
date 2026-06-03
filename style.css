@@ -89,7 +89,7 @@ nav a:hover { opacity: 0.75; }
 }
 .hero-content h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: clamp(1.95rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
     font-weight: bold;
     letter-spacing: 0.03em;
     line-height: 1.4;
@@ -99,7 +99,7 @@ nav a:hover { opacity: 0.75; }
     color: #333;
 }
 .hero-content p {
-    font-size: clamp(3rem, 2vw, 1.5rem);
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
     font-weight: bold;
     letter-spacing: 0.03em;
     line-height: 1.5;
@@ -109,7 +109,7 @@ nav a:hover { opacity: 0.75; }
 .hero-tagline {
   display: block;
   margin-top: 1rem;
-  font-size: 1.75rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   color: #fff;
 }
 
@@ -282,10 +282,12 @@ footer {
   .contact-grid { grid-template-columns: 1fr; }
   .contact-map { display: none; }
   nav { display: none; }
-  .hero-content h1 { font-size: 0.85rem; }
+  .hero-content { padding: 1.5rem; }
+  .hero-name { letter-spacing: 0.1em; }
 }
 
 @media (max-width: 480px) {
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-grid .gallery-wide { grid-column: span 1; }
+  .hero-content { padding: 1rem; }
 }
