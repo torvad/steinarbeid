@@ -76,9 +76,6 @@ nav a:hover { opacity: 0.75; }
   color: #fff;
   padding: 2.5rem 3rem;
   max-width: 700px;
-  background: rgba(0,0,0,0.45);
-  border-radius: 4px;
-  backdrop-filter: blur(2px);
 }
 
 .hero-name {
@@ -112,6 +109,13 @@ nav a:hover { opacity: 0.75; }
   border-radius: 3px;
   color: #333;
   margin-top: 1rem;
+}
+
+.hero-tagline {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .hero-cta {
