@@ -103,14 +103,13 @@ nav a:hover { opacity: 0.75; }
     font-weight: bold;
     letter-spacing: 0.03em;
     line-height: 1.5;
-   
     margin-top: 1rem;
 }
 
 .hero-tagline {
   display: block;
   margin-top: 1rem;
-  font-size: 1.575rem;
+  font-size: 1.75rem;
   color: #fff;
 }
 
