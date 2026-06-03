@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   color: var(--text);
   background: #fff;
   line-height: 1.7;
@@ -84,11 +84,11 @@ nav a:hover { opacity: 0.75; }
   text-transform: uppercase;
   opacity: 0.95;
   margin-bottom: 0.75rem;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
 }
 .hero-content h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: clamp(1.95rem, 2vw, 1.5rem);
     font-weight: bold;
     letter-spacing: 0.03em;
@@ -123,7 +123,7 @@ nav a:hover { opacity: 0.75; }
   font-size: 1.05rem;
   border-radius: 3px;
   transition: background 0.2s;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .hero-cta:hover { background: #1a1a1a; }
 
