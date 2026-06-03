@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lato', Arial, sans-serif;
   color: var(--text);
   background: #fff;
   line-height: 1.7;
@@ -80,12 +80,12 @@ nav a:hover { opacity: 0.75; }
 
 .hero-name {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
-  letter-spacing: 0.25em;
-  text-transform: none;
-  opacity: 0.85;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.95;
   margin-bottom: 0.75rem;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
 }
 .hero-content h1 {
     font-size: clamp(1.95rem, 2vw, 1.5rem);
